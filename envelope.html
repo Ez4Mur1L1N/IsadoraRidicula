@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Isadora Ridícula Rodrigues,</strong>
+                        <p>
+                            Só passando para relembrar nosso dia e pra demonstra o quão grato sou por ter você!
+                            Agora são exatamente 20:13 do dia 6 e eu tô vendo vídeo no yt pra tentar fazer uma graça pra você.
+                            Isso não representa nem 1% do que eu sinto por você, mas tu sabe que eu gosto de fazer essas palhaçadas.
+                            Que Papai do Céu abençoe imensamente nossas vidas e que possamos comemorar muitos dias 8 juntos!
+                            <p style="text-align: center;">Te amo muito, Linda!<br>Do namorado mais gostoso, bonito e inteligente do mundo🙈<p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <button id="continuarBtn" onclick="window.location.href='https://www.youtube.com/shorts/W5ejot7TEqA'">Continuar</button>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
